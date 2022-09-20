@@ -49,7 +49,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4rem 7rem;
+    margin: 7rem 4rem;
 }
 
 .imageCard img {
@@ -75,12 +75,18 @@ p {
 
 @media (min-width: 768px){
     header {
-    font-size: 1.6 rem;
+    font-size: 1.6rem;
     }
     
     .gallery {
         display: flex;
-        
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .imageCard {
+        max-width: 28%;
     }
     
 }
